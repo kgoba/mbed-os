@@ -647,6 +647,18 @@
         "default_lib": "small",
         "release_versions": ["2"]
     },
+    "BARE_F070F6": {
+        "core": "Cortex-M0",
+        "default_toolchain": "ARM",
+        "extra_labels": ["STM", "STM32F0", "STM32F070F6"],
+        "supported_toolchains": ["ARM", "uARM", "IAR", "GCC_ARM"],
+        "inherits": ["Target"],
+        "progen": {"target": "nucleo-f070f6"},
+        "detect_code": ["0755"],
+        "device_has": ["ANALOGIN", "I2C", "I2CSLAVE", "INTERRUPTIN", "LOWPOWERTIMER", "PORTIN", "PORTINOUT", "PORTOUT", "PWMOUT", "RTC", "SERIAL", "SLEEP", "SPI", "SPISLAVE", "STDIO_MESSAGES"],
+        "default_lib": "small",
+        "release_versions": ["2", "5"]
+    },
     "NUCLEO_F070RB": {
         "supported_form_factors": ["ARDUINO", "MORPHO"],
         "core": "Cortex-M0",
